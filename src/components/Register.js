@@ -98,6 +98,12 @@ class Register extends React.Component {
                     disabled={this.props.inProgress}>
                     Sign up
                   </button>
+                  <button
+                    className="btn btn-lg btn-primary pull-xs-right"
+                    type="Cancel"
+                    disabled={this.props.inProgress}>
+                    Sign up
+                  </button>
 
                 </fieldset>
               </form>
