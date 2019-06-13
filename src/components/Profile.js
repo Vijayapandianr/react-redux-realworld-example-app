@@ -85,6 +85,10 @@ class Profile extends React.Component {
   componentWillUnmount() {
     this.props.onUnload();
   }
+  
+  componentWillMount() {
+    console.log('Console while componentWillMount');
+  }
 
   renderTabs() {
     return (
