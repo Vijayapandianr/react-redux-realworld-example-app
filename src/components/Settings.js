@@ -14,7 +14,7 @@ class SettingsForm extends React.Component {
 
     this.state = {
       image: '',
-      username: '',
+      username: 'Vijayapandian',
       bio: '',
       email: '',
       password: ''
@@ -42,7 +42,8 @@ class SettingsForm extends React.Component {
     if (this.props.currentUser) {
       Object.assign(this.state, {
         image: this.props.currentUser.image || '',
-        username: this.props.currentUser.username,
+        
+        : this.props.currentUser.username,
         bio: this.props.currentUser.bio,
         email: this.props.currentUser.email
       });
@@ -63,6 +64,7 @@ class SettingsForm extends React.Component {
   render() {
     return (
       <form onSubmit={this.submitForm}>
+      <h3>{this.state.username}</h3>
         <fieldset>
 
           <fieldset className="form-group">

@@ -36,6 +36,10 @@ class Login extends React.Component {
   componentWillUnmount() {
     this.props.onUnload();
   }
+  
+  componentDidMount() {
+    console.log('Console from Login while componentDidMount');
+  }
 
   render() {
     const email = this.props.email;
